@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tipCalci.css">
+</head>
+<body>
+    <div class="tipCalculator">
+        <div>
+            <label for="amount">Amount:</label>
+            <input type="text" id="amount">
+        </div>
+    
+        <div>
+            <label for="tip">Tip:</label>
+            <input type="text" id="tip">
+        </div>
+    
+        <button onclick="calculate()">Calculate</button>
+
+        <div id="output">
+            <h2 class="amount"></h2>
+            <h2 class="tip"></h2>
+            <h2 class="gst"></h2>
+            <h2 class="total"></h2>
+        </div>
+    </div>
+    <script src="tipCalci.js"></script>
+</body>
+</html>

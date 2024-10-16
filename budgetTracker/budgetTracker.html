@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="budgectTrackerCalci.css">
+</head>
+<body>
+    <div class="expenseTracker" id="expenseTracker">
+        <div class="banner">
+            <h1>Expence Tracker</h1>
+        </div>
+        <div class="content">
+
+            <div class="yourBalance">
+                <h2>Your Balance</h2>
+                <h1 id="totalBalance">0$</h1>
+            </div>
+            <div class="IncomeExpense">
+                <div class="income">
+                    <h2>Income</h2>
+                    <h1 id="income">0 $</h1>
+                </div>
+                <div class="expense">
+                    <h2>Expense</h2>
+                    <h1 id="expense">0$</h1>
+                </div>
+            </div>
+            <div class="history">
+                <h2>History</h2>
+                <hr>
+                <ul id="historyContent">
+                    
+                </ul>
+            </div>
+            <div class="addNewTransaction">
+                <h2>Add New Transaction</h2>
+                <hr>
+                <label for="text">Text:</label>
+                <input type="text" id="text">
+
+                <label for="amount">Amount:</label>
+                <input type="text" id="amount">
+                <button id="addTransaction" onclick="addTransaction()">Add Transaction</button>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+    <!-- <h1>Add New trasaction</h1>
+    <label for="text">Text</label>
+    <input type="text" name="text" id="text">
+
+    <label for="amount">Amount:</label>
+    <input type="text" id="amount">
+    <button onclick="addTrasaction()">Add Trasaction</button> -->
+
+    <script src="budget.js"></script>
+</body>
+</html>

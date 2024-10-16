@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tipCalculator{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+
+    background-color: bisque;
+    
+    
+}
+.tipCalculator > div{
+    align-self: center;
+    padding-bottom: 20px;
+}
+
+.tipCalculator > div > label,input{
+    font-size: 1.5rem;
+    
+}
+.tipCalculator > button{
+    font-size: 1.2rem;
+    padding: 5px;
+    width: 150px;
+    align-self: center;
+    margin-top: 10px;
+ 
+}

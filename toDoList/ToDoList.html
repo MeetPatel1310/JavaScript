@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To-Do List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="toDoList.css">
+  </head>
+
+  <body>
+    <div class="container-fluid">
+        <div class="row" id="title">
+            <div class="col-md-12">
+              <h1>To-Do List</h1>
+              <button onclick="openform()" type="button" class="btn btn-success">Go to form</button>
+            </div>
+        </div>
+        <!-- <div class="row" id="table-head">
+            <div class="col-md-12">
+                <table class="table">
+                    <thead>
+                      <tr>
+
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="table-active">
+                        ...
+                      </tr>
+                      <tr>
+                        ...
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2" class="table-active">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+
+        </div> -->
+        <div class="row" id="table">
+            <div class="col-12">
+                <table>
+                  <thead>
+                    <tr id="tableHead">
+                        <th>Name</th>
+                        <th>Task</th>
+                        <th>Priority</th>
+                        <th>Date</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tbody">
+                    
+                  </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row"  id="form" >
+            <div class="col-lg" class="form" >
+                <form> 
+                  <div class="cancel">
+                    <p>
+                      <i class="bi bi-x-circle" onclick="closeform()"></i>
+                    </p>
+
+                  </div>
+                    <div>
+                        <label for="Name">Name: </label>
+                        <input type="text" id="name">
+                    </div>
+                    <div>
+                        <label for="task">Task:</label>
+                        <input type="text" id="task">
+                    </div>
+                    <div>
+                        <label for="priority">Priority: </label>
+                        <select name="" id="priority">
+                          <option value="high">High</option>
+                          <option value="medium">Medium</option>
+                          <option value="low">Low</option>
+                        </select>
+                    </div>
+                    <div>
+                      <label for="date">Date</label>
+                      <input type="date" id="date">
+                    </div>
+                    <div class="btn" >
+                      <button type="button" class="btn btn-success" id="add" onclick="addTask()">Add Task</button>
+                    </div>
+                </form>
+                
+              </div>
+        </div>
+ 
+    </div>
+    <script src="toDoList.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

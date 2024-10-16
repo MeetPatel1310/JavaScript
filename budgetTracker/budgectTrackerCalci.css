@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: rgb(40, 157, 93);
+}
+.content{
+    padding: 20px;
+}
+.expenseTracker{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    border: 2px solid black;
+}
+
+.IncomeExpense{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.IncomeExpense> .income, .expense{
+    background-color: antiquewhite;
+    width: 45%;
+    padding: 20px;
+}
+
+.history{
+    margin: 20px 0px;
+}
+#historyContent{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    padding-left: 5px;
+    
+}
+
+/* .content1, .content2{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+} */
+
+.addNewTransaction{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: bold;
+}
+.addNewTransaction > button{
+    font-size: 1.4rem;
+    padding: 10px;
+    background-color: rgb(52, 52, 200);
+    color: white;
+}
+.addNewTransaction>input{
+    height: 30px;
+    font-size: large;
+}
+.addNewTransaction > button:hover{
+    background-color: rgb(30, 30, 182);
+}
